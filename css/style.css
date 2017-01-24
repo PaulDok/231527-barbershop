@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "PT Sans Narrow Bold";
+  font-style: bold;
+  font-weight: 400;
+  src:
+    local("PT Sans Narrow Bold"),
+    local("PTSans-NarrowBold"),
+    url("fonts/ptsansnarrowbold.woff2") format("woff2"),
+    url("fonts/ptsansnarrowbold.woff") format("woff");
+}
+
+body {
+  font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
