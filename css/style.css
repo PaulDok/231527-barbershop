@@ -52,6 +52,14 @@ h3 {
   min-height: 70px;
 }
 
+.main-navigation a {
+  float: left;
+}
+
+.main-navigation ul li {
+  float: left;
+}
+
 .user-block {
   float: right;
   width: 140px;
@@ -105,8 +113,11 @@ h3 {
   min-height: 330px;
 }
 
+.footer-margin-index {
+  height: 65px;
+}
+
 .main-footer {
-  margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -147,6 +158,10 @@ h2 {
   margin-bottom: 55px;
 }
 
+.breadcrumbs ul li {
+  float: left;
+}
+
 .filter {
   float: left;
   width: 220px;
@@ -182,8 +197,6 @@ h2 {
 }
 
 .item-price-and-purchase {
-  width: 190px;
-
   /* Только для оформления сетки */
   min-height: 45px
 }
@@ -196,6 +209,14 @@ h2 {
 .products-paging {
   /* Только для оформления сетки */
   min-height: 45px;
+}
+
+.products-paging li {
+  float: left;
+}
+
+.footer-margin-catalog {
+  height: 49px;
 }
 
 /****************/
@@ -243,4 +264,8 @@ h2 {
 
 .product-description .item-price-and-purchase {
   margin-bottom: 66px;
+}
+
+.footer-margin-item {
+  height: 49px;
 }
