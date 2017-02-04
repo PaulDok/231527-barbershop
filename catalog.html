@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-catalog">
   <header class="main-header">
     <div class="container clearfix">
       <nav class="main-navigation">
-        <a href="index.html">
-          <img src="img/header-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
-        </a>
         <ul>
+          <li>
+            <a class="nav-home" href="index.html">
+              <img src="img/header-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+            </a>
+          </li>
           <li>
             <a href="#">Информация</a>
           </li>
@@ -22,7 +25,7 @@
           <li>
             <a href="#">Прайс-лист</a>
           </li>
-          <li>
+          <li class="current-nav-page">
             <a href="catalog.html">Магазин</a>
           </li>
           <li>
@@ -38,7 +41,7 @@
 
   <main class="container">
     <h2>Средства для ухода</h2>
-    <div class="breadcrumbs clearfix">
+    <div class="breadcrumbs">
       <ul>
         <li>
           <a href="index.html">Главная</a>
@@ -85,20 +88,20 @@
           <h3>Группы товаров:</h3>
           <ul class="filter-product-type">
             <li>
-              <label>
-                <input type="radio" name="product-type" value="shaving-accessories">
+              <input type="radio" id="radio1" name="product-type" value="shaving-accessories">
+              <label for="radio1">
                 Бритвенные принадлежности
               </label>
             </li>
             <li>
-              <label>
-                <input type="radio" name="product-type" value="care" checked>
+              <input type="radio" id="radio2" name="product-type" value="care" checked>
+              <label for="radio2">
                 Средства для ухода
               </label>
             </li>
             <li>
-              <label>
-                <input type="radio" name="product-type" value="accessories">
+              <input type="radio" id="radio3" name="product-type" value="accessories">
+              <label for="radio3">
                 Аксессуары
               </label>
             </li>
@@ -110,9 +113,9 @@
       <div class="products">
         <div class="product-articles clearfix">
           <article class="product-article">
-            <a href="catalog-item.html">
+            <a class="product-link" href="catalog-item.html">
               <img src="img/baxter-travel-set.jpg" width="220" height="165" alt="Набор для путешествий &laquoBaxter of California&raquo">
-              <p>Набор для путешествий &laquoBaxter of California&raquo</p>
+              <p>Набор для путешествий<br>&laquoBAXTER OF CALIFORNIA&raquo</p>
             </a>
             <div class="item-price-and-purchase">
               <div class="item-price">
@@ -122,9 +125,9 @@
             </div>
           </article>
           <article class="product-article">
-            <a href="#">
+            <a class="product-link" href="#">
               <img src="img/baxter-conditioner.jpg" width="220" height="165" alt="Увлажняющий кондиционер &laquoBaxter of California&raquo">
-              <p>Увлажняющий кондиционер &laquoBaxter of California&raquo</p>
+              <p>Увлажняющий кондиционер<br>&laquoBAXTER OF CALIFORNIA&raquo</p>
             </a>
             <div class="item-price-and-purchase">
               <div class="item-price">
@@ -134,9 +137,9 @@
             </div>
           </article>
           <article class="product-article">
-            <a href="#">
+            <a class="product-link" href="#">
               <img src="img/suavecito-hair-gel.jpg" width="220" height="165" alt="Гель для волос &laquoSuavecito&raquo">
-              <p>Гель для волос &laquoSuavecito&raquo</p>
+              <p>Гель для волос<br>&laquoSUAVECITO&raquo</p>
             </a>
             <div class="item-price-and-purchase">
               <div class="item-price">
@@ -146,9 +149,9 @@
             </div>
           </article>
           <article class="product-article">
-            <a href="#">
+            <a class="product-link" href="#">
               <img src="img/american-crew-clay.jpg" width="220" height="165" alt="Глина для укладки волос &laquoAmerican Crew&raquo">
-              <p>Глина для укладки волос &laquoAmerican Crew&raquo</p>
+              <p>Глина для укладки волос<br>&laquoAMERICAN CREW&raquo</p>
             </a>
             <div class="item-price-and-purchase">
               <div class="item-price">
@@ -158,9 +161,9 @@
             </div>
           </article>
           <article class="product-article">
-            <a href="#">
+            <a class="product-link" href="#">
               <img src="img/american-crew-hair-gel.jpg" width="220" height="165" alt="Гель для волос &laquoAmerican Crew&raquo">
-              <p>Гель для волос &laquoAmerican Crew&raquo</p>
+              <p>Гель для волос<br>&laquoAMERICAN CREW&raquo</p>
             </a>
             <div class="item-price-and-purchase">
               <div class="item-price">
@@ -170,9 +173,9 @@
             </div>
           </article>
           <article class="product-article">
-            <a href="#">
+            <a class="product-link" href="#">
               <img src="img/baxter-grooming-set.jpg" width="220" height="165" alt="Набор для бритья &laquoBaxter of California&raquo">
-              <p>Набор для бритья &laquoBaxter of California&raquo</p>
+              <p>Набор для бритья<br>&laquoBAXTER OF CALIFORNIA&raquo</p>
             </a>
             <div class="item-price-and-purchase">
               <div class="item-price">
@@ -182,7 +185,7 @@
             </div>
           </article>
         </div>
-        <ul class="products-paging clearfix">
+        <ul class="products-paging">
           <li>
             <a href="#">1</a>
           </li>
@@ -213,15 +216,15 @@
       <section class="footer-social">
         <p>Давайте дружить!</p>
         <ul class="social-list">
-          <a class="social-btn social-btn-vk" href="#">
-            <img src="img/vk-logo.png" width="25" height="16" alt="Вконтакте">
-          </a>
-          <a class="social-btn social-btn-fb" href="#">
-            <img src="img/facebook-logo.png" width="12" height="22" alt="Facebook">
-          </a>
-          <a class="social-btn social-btn-inst" href="#">
-            <img src="img/instagram-logo.png" width="21" height="21" alt="Instagram">
-          </a>
+          <li>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </li>
         </ul>
       </section>
       <section class="footer-copyright">
