@@ -37,7 +37,7 @@ h3 {
 }
 
 .main-header {
-  margin-bottom: 60px;
+  margin-bottom: 54px;
 
   color: #ffffff;
 
@@ -719,6 +719,7 @@ input[type="radio"]:disabled + label::after {
 
 .item-price {
   display: inline-block;
+  vertical-align: top;
   width: 103px;
   padding-top: 14px;
   text-align: center;
@@ -726,8 +727,8 @@ input[type="radio"]:disabled + label::after {
 
 .item-price-and-purchase .btn {
   margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 19px;
+  padding-right: 19px;
 }
 
 .products-paging {
@@ -892,7 +893,7 @@ input[type="radio"]:disabled + label::after {
   line-height: 30px;
 }
 
-.inner-content h3 + h4 {
+.inner-content h4 {
   margin-top: 30px;
 }
 
@@ -922,6 +923,7 @@ input[type="radio"]:disabled + label::after {
   z-index: 2;
 
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0 25px;
 
