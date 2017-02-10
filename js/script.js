@@ -8,7 +8,8 @@ var mapCloseButton = document.querySelector('.modal-content-map .modal-content-c
 var loginOverlay = document.querySelector('.modal-content');
 var mapOverlay = document.querySelector('.modal-content-map');
 
-var showLogin = function () {
+var showLogin = function (evt) {
+  evt.preventDefault();
   loginOverlay.style['display'] = 'block';
 };
 
@@ -16,7 +17,8 @@ var hideLogin = function () {
   loginOverlay.style['display'] = 'none';
 };
 
-var showMap = function () {
+var showMap = function (evt) {
+  evt.preventDefault();
   mapOverlay.style['display'] = 'block';
 };
 
